@@ -12,7 +12,7 @@ class CreateJSRoutesCommand extends Command
      *
      * @var string
      */
-    protected $signature = "route:tojs
+    protected $signature = "route:js
         { --name=routes.js : Name of the output file. }
         { --p|path= : Path of the output file. }
         { --i|include= : List of comma separated route names to include (overrides exclude and methods). }
