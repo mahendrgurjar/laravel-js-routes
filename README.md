@@ -15,21 +15,37 @@ Execute artisan command
 php artisan route:js
 ```
 
-Add the resource to webpack.mix.js:
+Add variable in .env file
+```php
+MIX_APP_URL=http://localhost/projectname
+
+```
+
+Add resource to webpack.mix.js:
 
 ```js
 mix.js("resources/js/routes.js", "public/js/routes.js");
+
+And run below command.
+npm run develoment
+npm run prod
+npm run watch
+
 ```
 
-Add app path  `MIX_APP_URL` in .env file
-
-And js file in your footer links file.
-
+Add js file in your footer links file
 ```js
 <script src="{{asset('public/js/routes.js')}}"></script>
 ```
 
-Now have the `route` function. 
+## Important Notes
+```php
+When you update your route file don't forgot to run below commands.
+php artisan route:js
+
+```
+
+Now you have the `route` function. 
 First parameter of route function is the route name (same as in laravel).
 Second is an array of parameters or an object of parameters.
 Third is if you want to use absolute paths, by default true.
