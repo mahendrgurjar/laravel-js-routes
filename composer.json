@@ -1,0 +1,35 @@
+{
+    "name": "codiant/laravel-js-routes",
+    "description": "Create Laravel routes for JS files",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mahendra Gurjar",
+            "email": "mahendra.gurjar@codiant.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Codiant\\JSRoutes\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Codiant\\JSRoutes\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["Codiant\\JSRoutes\\JSRoutesServiceProvider"]
+        }
+    },
+    "require": {
+        "laravel/framework": ">= 6.20.14 |>= 7.30.4|>= 8.40.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
