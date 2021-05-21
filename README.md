@@ -42,7 +42,7 @@ Add js file in your footer links file
 ```php
 When you update your route file don't forgot to run below commands.
 php artisan route:js
-
+npm run (prod, develoment, watch)
 ```
 
 Now you have the `route` function. 
