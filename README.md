@@ -1,6 +1,7 @@
 # Laravel JS routes
 
 Command for use Laravel routes in JS Files
+With this package you can use laravel routes with laravel mix js.
 
 ## Usage:
 
