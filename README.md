@@ -15,9 +15,9 @@ Execute artisan command
 php artisan route:js
 ```
 
-Add variable in .env file
+Add variable in header layout file
 ```php
-MIX_APP_URL=http://localhost/projectname
+var APP_PATH = "{{ url('/') }}";
 
 ```
 

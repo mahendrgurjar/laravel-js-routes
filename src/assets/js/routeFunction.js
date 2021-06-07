@@ -43,8 +43,8 @@ window.route = function route(routeName, params = [], absolute = true) {
 
   if (uri.includes("}")) throw "Missing parameters";
 
-  if (absolute && process.env.MIX_APP_URL)
-    return process.env.MIX_APP_URL + "/" + uri;
+  if (absolute)
+    return APP_PATH + "/" + uri;
   return "/" + uri;
 };
 
